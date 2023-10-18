@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portflio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Autour+One&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script> -->
+    <!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"
+        integrity="sha512-aUhL2xOCrpLEuGD5f6tgHbLYEXRpYZ8G5yD+WlFrXrPy2IrWBlu6bih5C9H6qGsgqnU6mgx6KtU8TreHpASprw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style type="text/css">
+        .image {
+            background-image: url(../../public/images/WhatsApp_Image_2023-09-14_at_09.48.01-removebg-preview.png);
+            width: 100%;
+            height: 400px;
+            background-repeat: no-repeat;
+        }
+        @keyframes zoom {
+            from {
+                margin-left: 140%;
+                margin-top: -40px;
+                height: 60px;
+            }
+            25% {
+                transform: rotate(180deg);
+            }
+            50% {
+                margin-top: 200px;
+                width: 250px;
+                height: 300px;
+            }
+            75% {
+                transition: rotate(360deg);
+            }
+        }
+        #img {
+            animation-name: zoom;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+        }
+        h2:hover {
+            text-shadow: 0 0 10px cyan,0 0 20px cyan, 0 0 20px cyan;
+            transition: 2s;
+        }
+        h2 {
+            transition: 3s;
+        }
+        .one:hover {
+            text-shadow: 0 0 10px cyan,0 0 20px cyan, 0 0 20px cyan;
+        }
+        .two:hover {
+            text-shadow: 0 0 10px cyan,0 0 20px cyan, 0 0 20px cyan;
+        }
+        .three:hover {
+            text-shadow: 0 0 10px cyan,0 0 20px cyan, 0 0 20px cyan;
+        }
+        .four:hover {
+            text-shadow: 0 0 10px cyan,0 0 20px cyan, 0 0 20px cyan;
+        }
+        .five:hover {
+            text-shadow: 0 0 10px cyan,0 0 20px cyan, 0 0 20px cyan;
+        }
+        .six:hover {
+            text-shadow: 0 0 10px cyan,0 0 20px cyan, 0 0 20px cyan;
+        }
+        .seven:hover {
+            text-shadow: 0 0 10px cyan,0 0 20px cyan, 0 0 20px cyan;
+        }
+        section {
+            background-color: black;
+            background-size: cover;
+            width: 100%;
+            height: 500px;
+        }
+        #java {
+            justify-content: space-around;
+            display: flex;
+            /* display: none; */
+        }
+        #aboutme {
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+        }
+        h1:hover{
+            text-shadow: 0 0 10px black,0 0 20px black, 0 0 20px black;
+        }
+        .name:hover{
+            text-shadow: 0 0 10px aqua,0 0 20px aqua, 0 0 20px aqua;
+        }   
+    </style>
+    <script type="text/javascript">
+        $(()=>{
+            $("#imgbtn").click(() => {
+                btn.style.display = "block";
+                btn.style.display = "flex";
+                $("#imgbtn").slideToggle(2000);
+                img.style.display = "block";
+                $("#hover").mouseover(() => {
+                    hover.style.display = "none";
+                    Rohit.style.display = "block";
+                })
+            });
+            // $("#javascript").click(() => {
+            //     script.style.display = "block";
+            //     type.style.display = "block";
+            //     $("#java").slideToggle(3000);
+            // });
+            $("#about").click(() => {
+                info.style.display = "block";
+                Myinfo.style.display = "block";
+                $("#aboutme").toggle(3000);
+            });
+            $("#work").click(()=>{
+                button.style.display="block";
+                text.style.display="block";
+                button.style.display="flex";
+                $("#buttons").fadeToggle(3000);
+            })
+        });
+    </script>
+</head>
+<body>
+    <header class="d-flex p-2 bg-warning justify-content-between">
+        <div class="h1 ms-4" style="font-family: 'Autour One', cursive;">My Digital Portfolio</div>
+        <div class="mt-2" style="font-family: 'Autour One', cursive;">
+            I am a Full Stack Web Developer
+        </div>
+        <div class="me-3 mt-2">
+            <span class="bi bi-facebook me-2"></span>
+            <span class="bi bi-instagram me-2"></span>
+            <span class="bi bi-twitter me-2"></span>
+            <span class="bi bi-youtube me-2"></span>
+        </div>
+    </header>
+    <section class=" bg-dark h-100 w-100 text-white mt-4">
+        <button class="btn btn-danger w-100 mt-4" id="imgbtn">View Image</button>
+
+        <div class="image float-left" style="display: none;" id="img">
+
+            <div style="margin-left: 20px; padding-top: 150px;padding-left: 600px;">
+                <h3>Hello It's me</h3>
+                <button class="btn btn-light" id="hover" style="display: block;"><span
+                        class="bi bi-arrow-right-circle-fill"></span></button>
+
+                <h2 class="text-danger" id="Rohit" style="display: none;font-family: 'Autour One', cursive;">ROHIT
+                    CHAURASIYA</h2>
+                <p>I am Web Fullstack Developer</p>
+                <h4 style="color: goldenrod;font-family: 'Autour One', cursive;"><span class="one">HTML</span> | <span class="two">CSS</span> | <span class="three">Bootstrap</span> | <span class="four">JavaScript</span> |
+                    <span class="five">jQuery</span> | <span class="six">MongoDB</span> | <span class="seven">Node</span></h4>
+            </div>
+        </div>
+        <div style="display: none; justify-content: space-around;padding-bottom: 20px;" id="btn">
+            <button style="margin-top: 160px;" class="btn btn-secondary" id="about">About Me</button>
+            <button style="margin-top: 160px;" class="btn btn-danger" id="work">My Work</button>
+            <!-- <button style="margin-top: 160px;" style="margin-top: 160px;" class="btn btn-primary">Study</button> -->
+            <!-- <button style="margin-top: 160px;" class="btn btn-warning" id="javascript">JavaScript</button> -->
+        </div>
+            
+        <div id="buttons">
+            <h3 class="text-center mt-4 mb-4" style="display: none;" id="text">Personal Projects</h3>
+            <div  class="mt-4 ms-4 me-4 justify-content-between" id="button" style="display: none;margin-top: 50px;">
+                <a href="../resume/change flag.html"><button class="btn btn-primary">Change Flag</button></a>
+            <a href="../resume/inox with javascript.html"> <button class="btn btn-light">Inox Movies</button></a>
+            <a href="../resume/kfc .html"><button class="btn btn-success">Kfc</button></a>
+            <a href="../resume/number to word.html"><button class="btn btn-danger">Number to Word</button></a>
+           <a href="../resume/Recently view.html"> <button class="btn btn-warning">Recently view</button></a>
+           <a href="../resume/shopper.html"> <button class="btn btn-secondary">Shopper</button></a>
+           <a href="../resume/uber eats.htm"><button class="btn btn-primary">Uber Eats</button></a>
+            <a href="../resume/task .html"><button class="btn btn-success">Mobiles </button></a>
+            <a href="/new project/Frount-page.html"><button class="btn btn-warning">Video Library</button></a>
+            </div>
+        </div>
+        <hr>
+
+        <div id="aboutme">
+            <div class="ms-4" id="info" style="display: none;">
+                <div style="border: 20px solid red;border-right: none;border-bottom: none;padding-bottom: 15px;">&nbsp;</div>
+                <h3 class="mb-4 name" style="font-family: 'Autour One', cursive;margin-left: 30px;"> Name :- Rohit Chaurasiya</h3>
+                <div class="bg-secondary w-75" style="margin-left: 30px;">
+                    <ol class="pt-3">
+                        <span>1. CSS</span>
+                        <li class="ms-3" style="list-style-type:square ;">Styles & Inline Style</li>
+                        <li class="ms-3" style="list-style-type:square ;">CSS Selectors</li>
+                        <li class="ms-3" style="list-style-type:square ;">CSS Box Model</li>
+                        <li class="ms-3" style="list-style-type:square ;">Border & CSS Positions</li>
+                        <li class="ms-3" style="list-style-type:square ;">Css Transforms</li>
+                        <li class="ms-3" style="list-style-type:square ;">Key Frames</li>
+                        <li class="ms-3" style="list-style-type:square ;">Media Queries</li>
+                    </ol>
+                    <ol class="pb-2">
+                        <span>2. HTML</span>
+                        <li class="ms-3" style="list-style-type:square ;">Body Semantics</li>
+                        <li class="ms-3" style="list-style-type:square ;">Ordered List & Unordered List</li>
+                        <li class="ms-3" style="list-style-type:square ;">Image IN HTML</li>
+                        <li class="ms-3" style="list-style-type:square ;">Body Semantics and Entites</li>
+                        <li class="ms-3" style="list-style-type:square ;">Hyper Links In HTML</li>
+                        <li class="ms-3" style="list-style-type:square ;">Intra documents Links</li>
+                        <li class="ms-3" style="list-style-type:square ;">Data List With Terms & Definitions</li>
+                        <li class="ms-3" style="list-style-type:square ;">Tables In HTML</li>
+                        <li class="ms-3" style="list-style-type:square ;">Forms In HTML</li>
+                    </ol>
+                    <ol class="pb-2">
+                        <span>3. BOOTSTRAP</span>
+                        <li class="ms-3" style="list-style-type:square ;">Bootstrap COntainer Classes</li>
+                        <li class="ms-3" style="list-style-type:square ;">Bootstrap Box Model</li>
+                        <li class="ms-3" style="list-style-type:square ;">Bootstrap Display</li>
+                        <li class="ms-3" style="list-style-type:square ;">Modals</li>
+                        <li class="ms-3" style="list-style-type:square ;">Collapse</li>
+                        <li class="ms-3" style="list-style-type:square ;">Bootstrap Accordion</li>                 
+                        <li class="ms-3" style="list-style-type:square ;">Bootstrap Progress & Spinners</li>
+                        <li class="ms-3" style="list-style-type:square ;">Carousel Time Intervals</li>
+                    </ol>
+                    <ol class="pt-2">
+                        <span class="name">4. JAVASCRIPT</span>
+                        <li class="ms-3" style="list-style-type:square ;">Data Types & Structure</li>
+                        <li class="ms-3" style="list-style-type:square ;">Statements</li>
+                        <li class="ms-3" style="list-style-type:square ;">Functions</li>
+                        <li class="ms-3" style="list-style-type:square ;">Class</li>
+                        <li class="ms-3" style="list-style-type:square ;">Javascript String Handling</li>
+                        <li class="ms-3" style="list-style-type:square ;">Array Methos & Property</li>
+                    </ol>
+                    <ol class="pb-2">
+                        <span class="name">5. BACKEND</span>
+                        <li class="ms-3" style="list-style-type:square ;">MongoDB</li>
+                        <li class="ms-3" style="list-style-type:square ;">NodeJS</li>
+                        <li class="ms-3" style="list-style-type:square ;">ExpressJS</li>
+                    </ol>
+                </div>
+                <h2 class="ps-4">FLUENT LANGUAGES</h2>
+                    <li class="bg-secondary w-75 ms-4 ps-2"  style="list-style-type:square ;">English & Hindi</li>
+                
+                <h2 class="ps-4">PERSONAL DETAILS</h2>
+                <li class="bg-secondary w-75 ms-4 ps-2"   style="list-style-type:square ;">Date of Birth :- 14/08/2002</li>
+            </div>
+            <div id="Myinfo" style="display: none;" class="me-3">
+                <div class="text-center ms-4" style="padding-left: 400px;">
+                    Email ID :- chaurasiyarohit783@gmail.com &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label> Address :- Ravi Narayan Reddi Nagar Mahadevpuram Kukatpally Hyderabaad </label>
+                    <span></span>
+                    <label>Phone No :- 7985294372&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                </div>
+                <div class="bg-light text-dark">
+                    <div>
+                        <h1 class="text-danger ms-4 pt-2">About Me</h1>
+                        <p class="ms-4 ms-4">I am B.com student Passed Form Maharana Pratap Degree Collage (2023) , I am
+                            a Freshers, I would like to be a part of your organization where I can exhibit the best of
+                            my ability any contribute towards your organizationnal development.</p>
+                    </div>
+                    <hr class="mt-4 mb-4 ms-4">
+                    <div>
+                        <h1 class="text-danger ms-4">CAREER OBJECTIVE</h1>
+                        <p class="me-4 ms-4">To join and work in your organization with Ui Full Stack Development which
+                            offers the challenges and growth opportunities , scope to learn new ideas and design to
+                            enrich my knowledge and skill while contributing my best to the organization.</p>
+                    </div>
+                    <hr class="mt-4 mb-4 ms-4">
+                    <div>
+                        <h1 class="text-danger ms-4 mb-4">WORK EXPERIENCE (Personal Projects)</h1>
+                        <p class="me-4 ms-4 text-danger">1. ONLINE SHOPPING APPLICATION</p>
+                        <p class="me-4 ms-4">Understanding how to design a shopping online application that allows
+                            customers to browser, filter , short products and create a custom shopping cart.</p>
+                        <p class="me-4 ms-4 text-danger">2. ONLINE VIDEO TUTORIAL LIBRARY</p>
+                        <p class="me-4 ms-4">Understanding how to design a Video Library Like YouTube application that
+                            allow admin to upload modify and delete videos. And User can watch videos after register and login</p>
+                        <p class="me-4 ms-4 text-danger">Technologies Used:</p>
+                        <p class="me-4 ms-4">Front End :- HTML,CSS,JavaScript,jQuery</p>
+                        <p class="me-4 ms-4">Backend :- NodeJS, ExpressJS and MongoDB</p>
+                    </div>
+                    <hr class="mb-4 ms-4 mt-4">
+                    <div>
+                        <h1 class="text-danger ms-4 mb-4">EDUCATION</h1>
+
+                        <p class="me-4 ms-4 fw-bold">JUNIOR SECONDARY (10 <sup>th)</sup></p>
+                        <p class="me-4 ms-4">School Name :- Saraswati Shishu Mandir Pakkibag Gorakhpur, UP</p>
+                        <p class="me-4 ms-4"> Passing Year :- 2018</p>
+                        <p class="me-4 ms-4">Marks Obtained:- 68%</p>
+                        <p class="me-4 ms-4">City:- Gorakhpur , Dist:- Gorakhpur , State:- UP</p>
+
+                        <p class="me-4 ms-4 fw-bold">SENIOR SECONDARY (12 <sup>th)</sup></p>
+                        <p class="me-4 ms-4">School Name :- Saraswati Shishu Mandir Pakkibag Gorakhpur, UP</p>
+                        <p class="me-4 ms-4"> Passing Year :- 2020</p>
+                        <p class="me-4 ms-4">Marks Obtained:- 62%</p>
+                        <p class="me-4 ms-4">City:- Gorakhpur , Dist:- Gorakhpur , State:- UP</p>
+
+                        <p class="me-4 ms-4 fw-bold">Bachelor of Commerce (B.com)</p>
+                        <p class="me-4 ms-4">College Name :Maharana Prata Degree collage Gorakhpur, UP</p>
+                        <p class="me-4 ms-4"> Passing Year :- 2023</p>
+                        <p class="me-4 ms-4">Marks Obtained:- 62%</p>
+                        <p class="me-4 ms-4">City:- Gorakhpur , Dist:- Gorakhpur , State:- UP</p>
+                    </div>
+                    <hr class="mb-4 ms-4 mt-4 fw-bold">
+                    <h1 class="text-danger ms-4 mb-4">DECLERATION</h1>
+                    <p class="me-4 ms-4">I hereby affirm that the infromation provided in this form is ture & correct to
+                        the best of my khowledge.</p>
+                    &nbsp;
+                    <div class="ms-4 mb-4">
+                        Date :-
+                        <span style="float:right;" class="me-4 pb-4">Place :- Hyderabaad</span>
+                    </div>
+                    <hr>
+                </div>
+                <div style="border: 15px solid red;border-top:none;border-left: none;width: 400px;float: right;">&nbsp;</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div style="background-color: black;height: 500px;" class="text-light">
+        <div style="margin-left: 500px; padding-top: 100px;">
+            <span><input type="text" class="form-control w-50" placeholder="Hello Everyone this is my Profile" style="height: 60px;" autofocus></span><button style="margin-left: 513px;height: 60px;margin-top: -91px;width: 100px;" class="btn btn-secondary " >Login</button>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
